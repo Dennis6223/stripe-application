@@ -1,0 +1,12 @@
+{% extends 'base/template.html' %}
+{% load static %}
+{% block content %}
+	<div id="box" style="background-color: cyan;">
+		<img id="succes-icon" src="{% static 'images/check.png' %}">
+		<h4>Thank you for your contribution of ${{amount}}!</h4>
+		<p>Your support helps me fulfill my dream of of developing next-gen applications that will not only tranform today but te future</p>
+		<hr>
+		<a class="myButton" href="{% url 'index' %}" style="color: red; background-color:yellow;">&#x2190;Back to donation page</a>
+	</div>
+
+{% endblock content %}
